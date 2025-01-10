@@ -1,0 +1,144 @@
+.navbar{
+    padding: 20px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.navbar-menu{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.navbar .logo{
+    width: 150px;
+}
+
+.navbar-right{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dot-container{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    top: -8px;
+    right: -8px;
+    border-radius: 5px;
+    
+
+
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border:1px solid tomato;
+    color:#49557e ;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: 3s;
+
+}
+
+.navbar button:hover{
+    background-color: #fff4f2;
+
+}
+
+
+.navbar .active{
+    border-bottom: 2px solid #49557e;
+    padding-bottom: 2px;
+}
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-menu a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width:1050px) {
+    .logo{
+        width: 100px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 20px;
+    }
+    .navbar-right img{
+        width: 24px;
+    }
+    .dot-container img{
+        width: 24px;
+    }
+    .navbar button{
+            padding:8px 12px;
+            font-size: 12px;
+    }
+    .navbar-right{
+        gap:20px;
+    }
+    .navbar .logo{
+        width: 100px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:750px) {
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-right img{
+        width: 24px;
+    }
+    
+    .dot-container img{
+        width: 24px;
+        
+    }
+    .navbar button{
+            padding:8px 12px;
+            font-size: 12px;
+    }
+    .navbar-right{
+        gap:25px;
+    }
+    .navbar .logo{
+        width: 100px;
+        
+    }
+    
+}
+
+@media ((min-width:750px) and (max-width:860px)) {
+    .navbar-menu{
+        font-size: 15px;
+    }
+}
